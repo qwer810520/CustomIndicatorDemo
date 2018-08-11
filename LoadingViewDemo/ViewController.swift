@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     lazy var startButton: UIButton = {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("開始", for: .normal)
+        button.setTitle("show", for: .normal)
         button.backgroundColor = .orange
         button.setTitleColor(.white, for: .normal)
         button.layer.cornerRadius = 15
@@ -29,9 +29,9 @@ class ViewController: UIViewController {
         startButton.rx.tap
             .subscribe(onNext: {
                 print("ButtonDidPressed")
-                IGasLoading.show("銀行認證中，請勿關閉頁面...")
+                IGasLoading.show("載入中...")
 //                IGasLoading.show()
-                DispatchQueue.main.asyncAfter(deadline: .now() + 10, execute: {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: {
                     IGasLoading.dismiss()
                 })
             })
