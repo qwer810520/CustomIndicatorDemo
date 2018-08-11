@@ -1,6 +1,6 @@
 # CustomIndicator
 ## Demo
-![](https://www.dropbox.com/s/v2a33utecnxy8zz/DemoGif.gif?dl=0)
+![](https://github.com/qwer810520/CustomIndicatorDemo/blob/master/DemoGif.gif)
 
 ## 參考資料
 * [Design Teardown: Spinning Indicator](http://blog.matthewcheok.com/design-teardown-spinning-indicator)
